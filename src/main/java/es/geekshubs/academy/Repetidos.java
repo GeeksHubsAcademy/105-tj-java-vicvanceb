@@ -18,7 +18,7 @@ public class Repetidos {
    * @return
    */
   public <T> List<T> apply(final List<T> input) {
-    return null;
+    return input != null ? input.stream().distinct().collect(Collectors.toList()) : null;
   }
 
 
